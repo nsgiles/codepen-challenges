@@ -1,0 +1,89 @@
+body,
+html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #222;
+  color: #0c7;
+  font-family: sans-serif;
+}
+
+#chaos-game {
+  border: 1px solid #333;
+  display: flex;
+  align-items: center;
+}
+
+#controls {
+  max-width: 15rem;
+  padding: .75rem;
+  border-right: 1px solid #333;
+}
+
+h1 { margin-top: 0; }
+
+label {
+  display: block;
+  font-size: .875rem;
+}
+
+input, textarea {
+  border: 1px solid #333;
+  background: transparent;
+  color: #ccc;
+}
+
+button {
+  border: 1px solid #0c7;
+  background: transparent;
+  color: #0c7;
+  margin-bottom: .25rem;
+}
+button:hover{
+  cursor: pointer;
+}
+
+#canvas-container {
+  position: relative;
+  width: 530px;
+  height: 530px;
+}
+
+.canvas-label {
+  font-size: 9px;
+  color: #777;
+  position: absolute;
+}
+#canvas-label-origin { left: 0; top: 0; }
+#canvas-label-xhalf {
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+#canvas-label-xfull {
+  left: 100%;
+  top: 0;
+  transform: translateX(-100%);
+}
+#canvas-label-yhalf {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#canvas-label-yfull {
+  left: 0;
+  top: 100%;
+  transform: translateY(-100%);
+}
+
+
+#canvas {
+  padding: .5rem;
+}
+
+.mt {
+  margin-top: 1.5rem;
+}

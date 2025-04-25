@@ -1,0 +1,46 @@
+<div id="chaos-game">
+  <div id="controls">
+    <h1>Chaos game!</h1>
+    
+    <label for="vertices">Vertices</label>
+    <textarea id="vertices" rows="12" cols="30" oninput="drawVertices()">[
+  {"x": 256, "y": 39},
+  {"x": 6, "y": 472},
+  {"x": 506, "y": 472}
+]</textarea>
+           
+    <label for="distance" class="mt">Distance</label>
+    <input id="distance" type="number" value="0.5">
+    
+    <div class="mt">
+      <button id="start-btn">Start</button>
+      <button id="stop-btn">Stop</button>
+      <button id="reset-btn">Reset</button>
+    </div>
+    
+    <div class="mt">
+      <button id="triangle-btn">Triangle</button>
+      <button id="square-btn">Square</button>
+      <button id="pentagon-btn">Pentagon</button>
+      <button id="hexagon-btn">Hexagon</button>
+      <button id="heptagon-btn">Heptagon</button>
+      <button id="octagon-btn">Octagon</button>
+      <button id="nonagon-btn">Nonagon</button>
+      <button id="decagon-btn">Decagon</button>
+    </div>
+    
+    <div class="mt">
+      <button id="carpet-btn">Sierpiński carpet</button>
+      <button id="vicsek-btn">Vicsek fractal</button>
+    </div>
+  </div>
+  
+  <div id="canvas-container">
+    <canvas id="canvas"></canvas>
+    <span class="canvas-label" id="canvas-label-origin">0</span>
+    <span class="canvas-label" id="canvas-label-xhalf">256</span>
+    <span class="canvas-label" id="canvas-label-xfull">512</span>
+    <span class="canvas-label" id="canvas-label-yhalf">256</span>
+    <span class="canvas-label" id="canvas-label-yfull">512</span>
+  </div>
+</div>
